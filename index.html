@@ -9,7 +9,13 @@
 </style>
 <body>
 
-	<div id="application-root"></div> <!-- ROOT -->
+	<div id="root">
+		<intro>
+		<contact>
+		<school>
+		<employment>
+		<footer>
+	</div> <!-- ROOT -->
 
 
 <!-- REACT LIBRARIES -->
@@ -26,6 +32,89 @@
 <!-- JAVASCRIPT -->
 	<script type="text/babel">
 		
+	//functional components
+
+	function MyApp() {
+		return (
+			<div id="MyApp">
+				<header id='intro'>
+					<h1>Sally Strudel</h1>
+					<img 
+					src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" 
+					/>
+				
+	    			<p><strong>Hello!
+	    				<br /> 
+	    				Welcome my Mandatory Personal Portfolio</strong> : Using Cupcake Ipsum 
+	    				<br />
+	        			Jelly dessert pudding cookie chocolate cake chocolate cake. Gummies fruitcake jelly sweet roll. Chocolate cake gingerbread lemon drops jelly beans. Gingerbread donut jujubes candy bonbon croissant pudding powder.
+	    			</p>
+	      		</header>
+	      		<main>
+					<section id="contact">
+						<address>
+					        <h2>
+					          Contact Me
+					        </h2>
+
+					        <p><a href="#">Email</a></p>
+					        <p>Phone: (777)666-0420</p>
+						</address>
+					</section>
+					<section id="school">
+						<h2>School</h2>
+				        <h3><strong>Lunar Community College - LuCC</strong></h3>
+				        <ul>
+				          <li><strong>Associates Degree in Moon Landing</strong></li>
+				          <li><strong>Dates:</strong> 2008-2010</li>
+				        </ul>
+
+				        <h3><strong>Lunar State University - LUSU</strong></h3>
+				        <ul>
+				          <li><strong>Bachelors Degree in Lunar Science</strong></li>
+				          <li><strong>Honors</strong> Magna cum Laude</li>
+				          <li><strong>Dates:</strong> 20010-2012</li>
+				        </ul>
+		      		</section>
+		      		<section>
+				        <h2>Employment</h2>
+
+				        <h3><strong>Lunar Lady Grocery</strong></h3>
+				        <ul>
+				        	<li><strong>Job Title:</strong> Cashier</li>
+				          	<li><strong>Dates:</strong> 2010-2013</li>
+				          	<li><strong>Job Decription: </strong> Jelly dessert pudding cookie chocolate cake chocolate cake. Gummies 	fruitcake jelly sweet roll.Gingerbread donut jujubes candy bonbon croissant pudding powder.
+				          	</li>
+				        </ul>
+
+
+				        <h3><strong>Boeing</strong></h3>
+				        <ul>
+				          	<li><strong>Job Title:</strong> Lunarspace Engineer</li>
+				          	<li><strong>Dates:</strong> 2013-2016</li>
+				          	<li><strong>Job Decription: </strong> Jelly dessert pudding cookie chocolate cake chocolate cake. Gummies fruitcake jelly sweet roll.Gingerbread donut jujubes candy bonbon croissant pudding powder.</li>
+				        </ul>
+
+
+				        <h3><strong>Boeing</strong></h3>
+				        <ul>
+				          	<li><strong>Job Title:</strong> Lunarspace Master</li>
+				          	<li><strong>Dates:</strong> 2016-Current</li>
+				          	<li><strong>Job Decription: </strong> Take Command of Jelly dessert pudding cookie chocolate cake chocolate cake. Gummies fruitcake jelly sweet roll.Gingerbread donut jujubes candy bonbon croissant pudding powder.
+				          	</li>
+				        </ul>
+	      			</section>
+
+	      			<footer><strong>Website by Sally Strudel © 2019.</strong></footer>
+	      		</main>
+      		</div>
+		);
+	}
+
+	ReactDOM.render(
+		<MyApp />,
+		document.getElementById('root'));
+
 	</script>
 </body>
 </html>
