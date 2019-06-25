@@ -1,0 +1,44 @@
+* {
+	font-family: sans-serif;
+}
+
+div#MyApp {
+	display: flex;
+	flex-direction: column;
+	margin: 4%;
+	padding: 3%;
+	border: solid 2px slateblue;
+	border-radius: 10px;
+}
+
+header img {
+	border: solid 5px slateblue;
+	border-radius: 10px;
+}
+
+header p {
+	max-width: 50%;
+}
+
+header, section, footer {
+	padding-bottom: 10px;
+	border-bottom: solid 1px lightgrey;
+}
+
+ h2 {
+	color: slateblue;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a:hover {
+	background-color: lightgrey;
+}
+
+footer {
+	padding-top: 10px;
+}
